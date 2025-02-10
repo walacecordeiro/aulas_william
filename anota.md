@@ -53,7 +53,7 @@ print("Tamanho: ", tamanhos[-1] )
 ```py
 print("Existe tamanho grande ?", "grande" in tamanhos)
 ```
-<br><br><br>
+<br><br>
 
 # Métodos
 - `lower()` -> Transforma a string em minúscula
@@ -65,9 +65,21 @@ print("Existe tamanho grande ?", "grande" in tamanhos)
 - `enumerate()` -> Para obter um índice numérico
 - `float()` -> Conversão explicita de um valor para número decimal
 
-<br><br><br>
+<br><br>
 
-# Palavras reservadas
+## Funções
+- `def` -> Palavra chave que define uma função.
+- `nome_da_funcao` -> Nome da função em si. Padrão snake_case.
+- `()` -> Pode conter ou não parâmetros.
+- `:` -> Indica o bloco da função.
+- `return` -> Opcional, usado para retornar um valor da função.
+- `parâmetro` -> É uma variável temporária
+- `argumento` -> É o valor que você irá passar no parâmetro.
+- `invocação` -> É o ato de chamar ou usar a função.
+
+<br><br>
+
+## Palavras reservadas
 `break` -> Encerra o loop
 
 
