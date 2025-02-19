@@ -26,3 +26,23 @@
 - `color:` -> Irá colocar uma cor no texto.
 - `background:` -> Irá colocar uma cor de pressnchimento no fundo do elemento.
 - `font-size:` -> Altera o tamanho da fonte.
+
+<br>
+
+# AULA 03
+## SELETORES NO CSS
+
+É a forma como você irá chamar um determinado elemento do `html` no `css`.
+
+- `tag` - Basicamente, você chama a tag em sí para realizar a estilização
+  - Quando você chama diretamente a tag, cuidado para não estilizar todos os elementos que possuem aquela tag.
+- `#id` - Você cria um identificador único na tag do elemento `html` e chama esse identificador no css.
+- `.class` - Você cria um `apelido` na tag do elemento e esse `apelido` pode ser utilizado quantas vezes necessário, inclusive em outras tags diferentes.
+
+<br>
+
+## SISTEMA DE CORES
+- `nome da cor` - Especifica o valor da cor através do nome dela em inglês.
+- `hexadecimal` - Especifica o valor da cor através de uma sequência alfa-numérica.
+- `rgb` - Especifica a cor através da intensidade do red(`vermelho`), green(`verde`) e blue(`azul`).
+- `rgba` - São os mesmos valores do rgb, porém com o valor do alpha(`opacidade`)

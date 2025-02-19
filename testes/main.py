@@ -1,26 +1,16 @@
-for n in range(2,10):
-    for x in range(2,n): # Caso o range não seja iterável, a execução pula pro else
-        if n % x == 0:
-            print(f"{n} é igual a {x} * {n//x}")
-            break
-    else:
-        print(f"{n} é um número primo")
+usuarios = {'walace':'ativo', 'denis':'inativo', 'marcos':'ativo', 'marcelo':'inativo'}
 
+# Neste caso o loop itera pela cópia e deleta na coleção original.
+for user, status in usuarios.copy().items():
+    if status == 'inativo':
+        del usuarios[user]
 
-import re
+print(usuarios)
 
-def verifica_padrao(texto):
-    match texto:
-        case texto if re.fullmatch(r"\d{3}\.\d{3}\.\d{3}-\d{2}", texto):
-            print("É um CPF válido.")
-        case texto if re.fullmatch(r"\(\d{2}\) \d{4,5}-\d{4}", texto):
-            print("É um número de celular válido.")
-        case texto if re.fullmatch(r"\d{5}-\d{3}", texto):
-            print("É um CEP válido.")
-        case _:
-            print("Padrão não reconhecido.")
+# Neste caso é criada uma nova coleção, o loop itera diretamente nos itens da coleção, depois adiciona com base na condição os itens a nova coleção.
+usuarios_ativos = {}
+for user, status in usuarios.items():
+    if status == 'ativo':
+        usuarios_ativos[user] = status
 
-verifica_padrao("123.456.789-09")           # CPF
-verifica_padrao("(11) 98765-4321")          # Número de celular
-verifica_padrao("01000-000")                # CEP
-verifica_padrao("Olá, mundo!")              # Caso não reconhecido
+print(usuarios_ativos)
