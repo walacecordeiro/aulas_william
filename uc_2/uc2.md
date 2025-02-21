@@ -46,3 +46,25 @@
 - `hexadecimal` - Especifica o valor da cor através de uma sequência alfa-numérica.
 - `rgb` - Especifica a cor através da intensidade do red(`vermelho`), green(`verde`) e blue(`azul`).
 - `rgba` - São os mesmos valores do rgb, porém com o valor do alpha(`opacidade`)
+
+## AULA 04
+- `<img>` - Tag responsável por inserir uma imagem interna ou externa.
+  - `src` -> é onde é inserido o caminho da imagem;
+  - `alt` - é o texto alternativo que será exibido caso a imagem "quebre" e por questôes de acessibilidade.
+    - ex: `<img src="caminho_da_imagem" alt="logo da Bikecraft">`
+
+### listas
+- `<ul></ul>` - Informa que existirá itens e a posição desses itens não importa. `Lista não ordenada`.
+- `<ol></ol>` - Informa que existirá itens e a posição desses itens importa. `Lista ordenada`.
+- `<li></li>` - É cada item da lista.
+
+### tag de link
+- `<a></a>` - É utilizada para gerar um texto clicável. `Link`
+  - `href` - é uma propriedade onde você irá informar qual o caminho que o link irá enviar o usuário.
+    - Ex: `<a href="caminho_do_link">Sobre</a>`
+
+## css
+- `font-family: Arial, Helvetica, sans-serif;` - Propriedade que altera o tipo de fonte utilizado no elemento.
+- `padding` - É o espaçamento interno de um conteúdo até a borda.
+- `margin` - É o espaçamento 
+- `border` -
