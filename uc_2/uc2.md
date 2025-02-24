@@ -47,7 +47,7 @@
 - `rgb` - Especifica a cor através da intensidade do red(`vermelho`), green(`verde`) e blue(`azul`).
 - `rgba` - São os mesmos valores do rgb, porém com o valor do alpha(`opacidade`)
 
-## AULA 04
+# AULA 04
 - `<img>` - Tag responsável por inserir uma imagem interna ou externa.
   - `src` -> é onde é inserido o caminho da imagem;
   - `alt` - é o texto alternativo que será exibido caso a imagem "quebre" e por questôes de acessibilidade.
@@ -68,3 +68,26 @@
 - `padding` - É o espaçamento interno de um conteúdo até a borda.
 - `margin` - É o espaçamento 
 - `border` -
+
+# AULA 05
+### POSICIONAMENTO(GRID)
+
+- `GRID` - É uma das texnolofias mais utilizadas nos sistemas web e sites. A lógica utilizada é separar a tela em olunas e linhas que podem ser de diferentes tamanhos.
+
+### UTILIZANDO O GRID
+Utilizamos a propriedade display com o valor de grid.
+
+Ex: `display: grid;`
+
+### PRINCIPAIS PROPRIEDADES DO GRID
+- `grid-template-columns:` Propriedade utilizada para informar ao css quantas colunas e quais os tamanhos você irá usar.
+- `grid-template-rows:` Propriedade utilizada para informar quantas linhas serão geradas e o tamanho delas.
+  - Métricas utilizadas:
+    - `%, e px` - evitar.
+    - `fr` - Fração referente a página toda.
+    - `auto` - tamanho de forma atutomática.
+
+<br>
+
+- `grid-row:` Define em qual linha o elemento irá se posicionar.
+- `grid-column:` Define em qual coluna o elemento irá se posicionar.
