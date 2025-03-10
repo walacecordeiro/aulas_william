@@ -1,0 +1,60 @@
+div {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+}
+
+h1 {
+ grid-column: 1/-1;
+}
+
+img {
+ max-width: 100%;
+}
+
+/* Trabalhando com responsividade */
+/* Quando a tela tiver no máximo em 600px */
+/* @media (max-width: 600px){
+ div {
+  grid-template-columns: 1fr;
+ }
+ h1 {
+  text-align: center;
+  background-color: olivedrab;
+ }
+ img {
+  display: none;
+ }
+} */
+
+/* Quando a tela for a partir de 1000px */
+@media (min-width: 1000px){
+ div {
+  grid-template-columns: repeat(3, 1fr);
+ }
+}
+
+/* Quando a tela for apartir de 1000px ou menor que 500px */
+@media(min-width: 1000px), (max-width: 500px){
+ h1 {
+  font-size: 50px;
+ }
+}
+
+/* Quando a tela for maior ou igual a 700px e menor ou igual a 900px */
+@media(min-width: 700px) and (max-width: 900px){
+
+}
+
+@media (width <= 600px), (width >= 1000px){
+ div {
+  grid-template-columns: 1fr;
+ }
+ h1 {
+  text-align: center;
+  background-color: olivedrab;
+ }
+ img {
+  display: none;
+ }
+}
